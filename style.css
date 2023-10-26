@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    padding: 0;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #333;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666;
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover::after,
+nav a.current::after {
+    width: 100%;
+}
+
+.content {
+    display: flex; 
+    align-items: center; 
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    text-align: center; 
+}
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.image-container img {
+    margin: 0 10px; 
+}
+
+
+.infotext {
+    flex: 1; 
+    padding: 10px; 
+}
+
+.linnea {
+    max-width: 100%; 
+}
+
+.box1{
+    background-color:#666;
+    padding: 20p;
+}
+
+#projekt-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projekt-1 video {
+    width: 80%;
+    max-width: 600px; 
+}
+#projekt-5 {
+    text-align: center; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.maya, .maya1, .maya2 {
+    max-width: 100%; 
+    margin: 10px; 
+}
+
+.image-container img,
+.box1 {
+    background-color: white; 
+    padding: 20px; 
+    margin: 10px;
+    border-radius: 10px; 
+}
+
+p {
+    color: #fff;
+}
+
+.localNav{
+    padding-top: 5em;
+}
+
+#projekt-6 a{
+    font-size: 25px;
+}
