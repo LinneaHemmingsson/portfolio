@@ -50,7 +50,7 @@ nav a {
     text-decoration: none;
     position: relative;
     font-weight: bold;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 nav a::after {
@@ -63,7 +63,7 @@ nav a::after {
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 nav a:hover::after,
@@ -72,8 +72,8 @@ nav a.current::after {
 }
 
 .content {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
 }
 
 .main {
@@ -81,32 +81,33 @@ nav a.current::after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; 
-    text-align: center; 
+    height: 100vh;
+    text-align: center;
 }
+
 .image-container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-bottom: 20px; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
     margin-left: 30%;
 }
 
 .image-container img {
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 
 .infotext {
-    flex: 1; 
-    padding: 10px; 
+    flex: 1;
+    padding: 10px;
 }
 
 .linnea {
-    max-width: 100%; 
+    max-width: 100%;
 }
 
-.box1{
-    background-color:#666;
+.box1 {
+    background-color: #666;
     padding: 20px;
 }
 
@@ -116,21 +117,24 @@ nav a.current::after {
     height: auto;
     margin-left: 48%;
 }
-.aboutproject1{ 
+
+.aboutproject1 {
     margin-left: 50%;
     color: gainsboro;
 }
 
-.maya, .maya1, .maya2 {
-    max-width: 100%; 
-    margin: 10px; 
+.maya,
+.maya1,
+.maya2 {
+    max-width: 100%;
+    margin: 10px;
 }
 
 .image-container img,
 .box1 {
-    background-color: fff; 
-    padding: 20px; 
-    border-radius: 10px; 
+    background-color: fff;
+    padding: 20px;
+    border-radius: 10px;
     width: 40%;
 }
 
@@ -138,49 +142,54 @@ p {
     color: #fff;
 }
 
-.localNav{
+.localNav {
     padding-top: 7em;
 }
 
-.campus{
+.campus {
     width: 50%;
     height: 40%;
 }
-.aboutproject{
+
+.aboutproject {
     text-align: center;
     margin-left: 30%;
     color: gainsboro;
 }
+
 .image-container .maya {
-    width: 300px; 
+    width: 300px;
     height: auto;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 }
 
-.image-container .maya:hover  {
-    transform: scale(2.1); 
+.image-container .maya:hover {
+    transform: scale(2.1);
 }
 
 .image-container .manual {
-    width: 300px; 
+    width: 300px;
     height: auto;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 }
 
 .image-container .manual:hover {
-    transform: scale(2.1); 
-}
-h2{
-    color: #fff;
-}
-.info{
-    padding-top: 5em ;
+    transform: scale(2.1);
 }
 
-li{
+h2 {
+    color: #fff;
+}
+
+.info {
+    padding-top: 5em;
+}
+
+li {
     color: gainsboro;
 }
+
 .sidebar ul li {
     list-style: none;
-    text-decoration: none; 
+    text-decoration: none;
 }
