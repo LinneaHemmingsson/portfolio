@@ -15,6 +15,8 @@ header {
 
 nav ul {
     list-style-type: none;
+    margin-left: 26%;
+    font-size: 20px;
 }
 
 nav ul li {
@@ -35,14 +37,13 @@ nav ul li {
 }
 
 a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
 }
 
 a:hover {
     color: #666;
 }
-
 
 nav a {
     color: #fff;
@@ -95,7 +96,6 @@ nav a.current::after {
     margin: 0 10px; 
 }
 
-
 .infotext {
     flex: 1; 
     padding: 10px; 
@@ -107,33 +107,19 @@ nav a.current::after {
 
 .box1{
     background-color:#666;
-    padding: 20p;
+    padding: 20px;
 }
-
-
-/* #projekt-1 {
-    display: flex;
-    flex-direction: row;
-    margin-left: 80%;
-    color: #fff;
-   
-} */
 
 .video-container video {
     width: 80%;
     max-width: 600px;
     height: auto;
-    margin-left: 45%;
+    margin-left: 48%;
 }
-.aboutproject1{
-  
+.aboutproject1{ 
     margin-left: 50%;
-    color: aliceblue;
+    color: gainsboro;
 }
-
-/* #projekt-5 {
-    text-align: center; 
-} */
 
 .maya, .maya1, .maya2 {
     max-width: 100%; 
@@ -144,7 +130,6 @@ nav a.current::after {
 .box1 {
     background-color: fff; 
     padding: 20px; 
-   
     border-radius: 10px; 
     width: 40%;
 }
@@ -154,11 +139,7 @@ p {
 }
 
 .localNav{
-    padding-top: 5em;
-}
-
-#projekt-6 a{
-    font-size: 25px;
+    padding-top: 7em;
 }
 
 .campus{
@@ -168,7 +149,7 @@ p {
 .aboutproject{
     text-align: center;
     margin-left: 30%;
-    color: aliceblue;
+    color: gainsboro;
 }
 .image-container .maya {
     width: 300px; 
@@ -188,4 +169,18 @@ p {
 
 .image-container .manual:hover {
     transform: scale(2.1); 
+}
+h2{
+    color: #fff;
+}
+.info{
+    padding-top: 5em ;
+}
+
+li{
+    color: gainsboro;
+}
+.sidebar ul li {
+    list-style: none;
+    text-decoration: none; 
 }
