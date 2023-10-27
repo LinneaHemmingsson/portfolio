@@ -15,7 +15,7 @@ header {
 
 nav ul {
     list-style-type: none;
-    margin-left: 26%;
+    margin-left: 18%;
     font-size: 20px;
 }
 
@@ -90,7 +90,7 @@ nav a.current::after {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    margin-left: 30%;
+    margin-left: 20%;
 }
 
 .image-container img {
@@ -115,11 +115,11 @@ nav a.current::after {
     width: 80%;
     max-width: 600px;
     height: auto;
-    margin-left: 48%;
+    margin-left: 45%;
 }
 
 .aboutproject1 {
-    margin-left: 50%;
+    margin-left: 40%;
     color: gainsboro;
 }
 
@@ -153,7 +153,7 @@ p {
 
 .aboutproject {
     text-align: center;
-    margin-left: 30%;
+    margin-left: 20%;
     color: gainsboro;
 }
 
