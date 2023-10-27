@@ -31,8 +31,8 @@ nav ul li {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 1;
 }
-
 
 a {
     color: #ffffff;
@@ -49,7 +49,7 @@ nav a {
     text-decoration: none;
     position: relative;
     font-weight: bold;
-    transition: all 0.3s ease; /* Smooth transition */
+    transition: all 0.3s ease; 
 }
 
 nav a::after {
@@ -62,7 +62,7 @@ nav a::after {
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.3s ease; /* Smooth transition */
+    transition: all 0.3s ease; 
 }
 
 nav a:hover::after,
@@ -88,6 +88,7 @@ nav a.current::after {
     justify-content: center; 
     align-items: center; 
     margin-bottom: 20px; 
+    margin-left: 30%;
 }
 
 .image-container img {
@@ -109,25 +110,30 @@ nav a.current::after {
     padding: 20p;
 }
 
-#projekt-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-#projekt-1 video {
+/* #projekt-1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80%;
+    color: #fff;
+   
+} */
+
+.video-container video {
     width: 80%;
-    max-width: 600px; 
+    max-width: 600px;
+    height: auto;
+    margin-left: 45%;
 }
-#projekt-5 {
-    text-align: center; 
+.aboutproject1{
+  
+    margin-left: 50%;
+    color: aliceblue;
 }
 
-.image-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
+/* #projekt-5 {
+    text-align: center; 
+} */
 
 .maya, .maya1, .maya2 {
     max-width: 100%; 
@@ -136,10 +142,11 @@ nav a.current::after {
 
 .image-container img,
 .box1 {
-    background-color: white; 
+    background-color: fff; 
     padding: 20px; 
-    margin: 10px;
+   
     border-radius: 10px; 
+    width: 40%;
 }
 
 p {
@@ -152,4 +159,33 @@ p {
 
 #projekt-6 a{
     font-size: 25px;
+}
+
+.campus{
+    width: 50%;
+    height: 40%;
+}
+.aboutproject{
+    text-align: center;
+    margin-left: 30%;
+    color: aliceblue;
+}
+.image-container .maya {
+    width: 300px; 
+    height: auto;
+    transition: transform 0.3s; 
+}
+
+.image-container .maya:hover  {
+    transform: scale(2.1); 
+}
+
+.image-container .manual {
+    width: 300px; 
+    height: auto;
+    transition: transform 0.3s; 
+}
+
+.image-container .manual:hover {
+    transform: scale(2.1); 
 }
