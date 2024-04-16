@@ -1,195 +1,298 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--primary-color);
     margin: 0;
     padding: 0;
-    background-color: black;
+}
+
+:root {
+    --primary-color: lightgray;  
+    --secondary-color: rgb(241, 238, 238);
+    --accent-color: rgb(123, 123, 123);  
+    --text-color: rgb(85, 85, 85);
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
     text-align: center;
-    height: 60px;
+}
+    
+main {
+    padding: 20px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin-left: 18%;
-    font-size: 20px;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin-right: 10px;
+}
+nav ul li a:hover {
+    color: #FFFFFF;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-me p, .about-me ul {
+    color: var(--accent-color);
+}
+
+.about-me ul {
     padding: 0;
 }
 
-.sidebar {
-    width: 20%;
-    background-color: #333;
-    height: 100vh;
-    padding: 20px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
+.about-me li {
+    list-style-type: none;
+    margin-bottom: 10px;
 }
 
+.about-me .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px; 
+    margin: 20px auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background-color:white;
+    color: var(--accent-color);
+    padding: 10px 0;
+}
+
+
 a {
-    color: #fff;
     text-decoration: none;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
 }
 
 a:hover {
-    color: #666;
+    text-decoration: underline;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    font-weight: bold;
-    transition: all 0.3s ease;
+* {
+box-sizing: border-box;
 }
 
-nav a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: #fff;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.3s ease;
-}
-
-nav a:hover::after,
-nav a.current::after {
-    width: 100%;
-}
-
-.content {
+.project2 {
     display: flex;
-    align-items: center;
+    align-items: center; /* Centrerar elementen vertikalt */
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    background: linear-gradient(to right, var(--secondary-color) 50%, var(--primary-color) 50%);
+    max-width: 80%; 
+    margin: 20px auto;
+    max-height: 70%;
 }
 
-.main {
+.project-container {
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+.project-text {
+    max-width: 40%; 
+    margin: auto; 
+    text-align: left; 
+}
+
+.project {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    background: linear-gradient(to left, var(--secondary-color) 50%, var(--primary-color) 50%);
+    max-width: 80%; 
+    margin: 20px auto;
+}
+
+.project-image, .project-description {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.project-image img {
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+.project-description {
+    align-items: flex-start;
+    color: var(--text-color);
+    max-width: 50%;
+}
+
+/* @media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+    .project-image, .project-description {
+        flex-basis: auto;
+        max-width: 100%;
+    }
+
+} */
+
+
+.project-description p, .project-description ul {
+    margin-top: 20px; 
+}
+
+.project-description li {
+    margin-bottom: 10px; 
+}
+
+
+.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+a:hover, a:focus {
+    color: #FFFFFF; 
+}
+
+.project-image img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+p{
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h1, .contact-info h2 {
+    color: grey;
+}
+
+.contact-info p, .contact-info a {
+    color: var(--accent-color);
+}
+
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
 }
 
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-left: 20%;
+input[type="text"], input[type="email"], textarea {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+
 }
 
-.image-container img {
-    margin: 0 10px;
+button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.infotext {
-    flex: 1;
-    padding: 10px;
+button:hover {
+    background-color: var(--accent-color);
 }
 
-.linnea {
-    max-width: 100%;
+
+
+@media (max-width: 1750px) {
+
+.project-text {
+ max-width: 80%;
 }
 
-.box1 {
-    background-color: #666;
-    padding: 20px;
 }
+@media (max-width: 950px) {
+    .project, .project2 {
+        flex-direction: column; 
+        background: linear-gradient(to top, var(--secondary-color) 50%, var(--primary-color) 50%);
+        /* Använder 'to top' för .project och 'to bottom' för .project2 för varierande effekter */
+    }
+    
+    .project2 {
+        background: linear-gradient(to bottom, var(--secondary-color) 50%, var(--primary-color) 50%);
+        /* Specifikt åsidosätter för .project2 för att ha effekten åt motsatt håll */
+    }
 
-.video-container video {
-    width: 80%;
-    max-width: 600px;
-    height: auto;
-    margin-left: 45%;
+    .project-image, .project-description {
+        flex-basis: 100%; /* Låter båda ta upp full bredd när de är staplade */
+        max-width: 100%; /* Säkerställer att inga max-breddsbegränsningar gäller */
+    }
+
+    .project-description {
+        width: 100%; /* Explicit breddinställning för att säkerställa full breddtagning */
+        padding: 20px; /* Ger lite intern marginal om det behövs */
+        box-sizing: border-box; /* Inkluderar padding i breddberäkningen */
+    }
+
+    .project-image img {
+        max-height: 300px; 
+        width: 100%; 
+        object-fit: cover; 
+    }
 }
+@media (max-width: 768px) {
+    .project, .project2 {
+        background: #ffffff; 
+        padding: 15px;
+        margin-bottom: 20px; 
+        border: none; 
+        box-shadow: none; 
+    }
 
-.aboutproject1 {
-    margin-left: 40%;
-    color: gainsboro;
-}
+    .project-image img {
+        height: auto; 
+        max-width: 100%; 
+    }
 
-.maya,
-.maya1,
-.maya2 {
-    max-width: 100%;
-    margin: 10px;
-}
-
-.image-container img,
-.box1 {
-    background-color: fff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 40%;
-}
-
-p {
-    color: #fff;
-}
-
-.localNav {
-    padding-top: 7em;
-}
-
-.campus {
-    width: 50%;
-    height: 40%;
-}
-
-.aboutproject {
-    text-align: center;
-    margin-left: 20%;
-    color: gainsboro;
-}
-
-.image-container .maya {
-    width: 300px;
-    height: auto;
-    transition: transform 0.3s;
-}
-
-.image-container .maya:hover {
-    transform: scale(2.1);
-}
-
-.image-container .manual {
-    width: 300px;
-    height: auto;
-    transition: transform 0.3s;
-}
-
-.image-container .manual:hover {
-    transform: scale(2.1);
-}
-
-h2 {
-    color: #fff;
-}
-
-.info {
-    padding-top: 5em;
-}
-
-li {
-    color: gainsboro;
-}
-
-.sidebar ul li {
-    list-style: none;
-    text-decoration: none;
+    .project-description {
+        text-align: center; 
+    }
 }
